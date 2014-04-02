@@ -7,6 +7,11 @@ gem 'rails', '4.0.4'
 gem 'sqlite3'
 # ADDED DURING A TREEHOUSE CLASS. THIS WILL HELP WITH LOGIN AUTHENTICATION
 gem 'devise'
+# ADDED DURING A TREEHOUSE CLASS. THIS WILL HELP BUILD THE FORM
+gem 'simple_form'
+# ADDED DURING A TREEHOUSE CLASS. I NEED TO BE ABLE TO USE ATTR_ACCESSIBLE
+gem 'protected_attributes'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
