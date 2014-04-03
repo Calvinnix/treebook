@@ -3,8 +3,14 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  attr_accessible :first_name, :last_name, :profile_name, :email, :password, :password_confirmation
+  has_many :statuses
+  
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :profile_name, presence: true
+  
   def full_name 
-  first_name + " " + last_name
+  	first_name + " " + last_name
   end
+  
 end

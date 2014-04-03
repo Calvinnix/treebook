@@ -9,8 +9,6 @@ gem 'sqlite3'
 gem 'devise'
 # ADDED DURING A TREEHOUSE CLASS. THIS WILL HELP BUILD THE FORM
 gem 'simple_form'
-# ADDED DURING A TREEHOUSE CLASS. I NEED TO BE ABLE TO USE ATTR_ACCESSIBLE
-gem 'protected_attributes'
 
 
 # Use SCSS for stylesheets
