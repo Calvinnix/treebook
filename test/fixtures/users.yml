@@ -4,4 +4,8 @@ Calvin:
   email: "calvin@email.com"
   profile_name: 'CalvinNix'
 
-
+Jim: 
+  first_name: 'Jim'
+  last_name: 'Joe'
+  email: "Jim@email.com"
+  profile_name: 'JimJoe'
