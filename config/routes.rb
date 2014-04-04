@@ -1,6 +1,19 @@
 Treebook::Application.routes.draw do
   devise_for :users
+  
+  #adds /register/ as another way to get to registration
+  
+  devise_scope :user do
+  	get 'register', to: 'devise/registrations#new', as: :register
+  	get 'login', to: 'devise/sessions#new', as: :login
+  	get 'logout', to: 'devise/sessions#destroy', as: :logout
+  end
+  
+  
   resources :statuses
+  
+  get 'feed', to: 'statuses#index', as: :feed
+  
   root to: 'statuses#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
