@@ -8,8 +8,6 @@
 </head>
 <body>
 	<div class="container">
-	 <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
 		<div class="navbar">
 			<div class="navbar-inner">
 				<a class="brand" href="#">Treebook</a>
@@ -30,6 +28,13 @@
 					
 				</ul>
 			</div>
+			<% flash.each do |type, message| %>
+				<div class="alert <%= flash_class type%>">
+					<button class="close" data-dismiss="alert">x</button>
+					<%= message %>
+				</div>
+					
+			<% end %>
 		</div>
 		<%= yield %>
 	</div>
