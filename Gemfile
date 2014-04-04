@@ -8,6 +8,9 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
+group :production do
+gem 'pg'
+end
 
 # ADDED DURING A TREEHOUSE CLASS. THIS WILL HELP WITH LOGIN AUTHENTICATION
 gem 'devise'
