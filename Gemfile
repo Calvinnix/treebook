@@ -10,6 +10,7 @@ end
 
 group :production do
 gem 'pg'
+gem 'rails_12factor'
 end
 
 # ADDED DURING A TREEHOUSE CLASS. THIS WILL HELP WITH LOGIN AUTHENTICATION
