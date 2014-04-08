@@ -9,3 +9,9 @@ Jim:
   last_name: 'Joe'
   email: "Jim@email.com"
   profile_name: 'JimJoe'
+
+Mike: 
+  first_name: 'Mike'
+  last_name: 'The Frog'
+  email: "mike@email.com"
+  profile_name: 'mikethefrog'
