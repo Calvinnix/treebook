@@ -17,7 +17,11 @@ end
 gem 'devise'
 # ADDED DURING A TREEHOUSE CLASS. THIS WILL HELP BUILD THE FORM
 gem 'simple_form'
+# Added during treehouse class
 
+group :test do
+	gem 'shoulda'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
